@@ -39,3 +39,14 @@ Here’s the fix that worked for me:
 ```bash
 sudo apt install linux-image-amd64 linux-headers-amd64
 sudo reboot
+```
+---
+
+## 📸 Screenshots
+
+| Description | Preview |
+|--------------|----------|
+| Kali graphical installation screen | ![Installation Progress](Screenshots/1-installation-progress.png) |
+| No network detected during install | ![No Wi-Fi](Screenshots/4-no-wifi.png) |
+| Identifying Broadcom BCM4360 adapter | ![Adapter Detected](Screenshots/2-bcm4360-detected.png) |
+| Wi-Fi successfully connected after fix | ![Wi-Fi Working](Screenshots/3-wifi-working.png) |
