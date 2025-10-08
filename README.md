@@ -1,4 +1,4 @@
-# 💻 Kali-on-MacBookAir-2015
+# 💻 Kali-on-MacBookAir-2015 
 
 Documenting my personal experience reinstalling **Kali Linux** on a **MacBook Air (2015, Intel i5)** after a macOS update erased my dual boot setup.  
 This project details the installation process, network issues, and how I fixed the Broadcom Wi-Fi driver problem on this specific hardware.
