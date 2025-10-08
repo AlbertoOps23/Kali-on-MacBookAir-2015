@@ -1,25 +1,41 @@
-# Kali-Linux-on-MacBookAir-2015
+# 💻 Kali-on-MacBookAir-2015
 
-Documenting the process of reinstalling Kali Linux on a 2015 MacBook Air after macOS update erased the dual boot. Includes driver fixes for Broadcom BCM4360 Wi-Fi and offline installation troubleshooting.
+Documenting my personal experience reinstalling **Kali Linux** on a **MacBook Air (2015, Intel i5)** after a macOS update erased my dual boot setup.  
+This project details the installation process, network issues, and how I fixed the Broadcom Wi-Fi driver problem on this specific hardware.
 
-## 💻 Overview
-This project documents how I reinstalled Kali Linux on my 2015 MacBook Air (Intel i5) after macOS updates removed my previous dual boot.  
-It covers:
-- Creating a Kali Linux USB installer on Windows (Rufus)
-- Partitioning the Mac drive for dual boot
-- Installing Kali without network connectivity
-- Fixing Wi-Fi (Broadcom BCM4360) after installation
-- Final verification and setup
+---
 
-## 🧰 System Info
-- **Device:** MacBook Air (Early 2015, Intel i5)
-- **Wi-Fi Chip:** Broadcom BCM4360 802.11ac
-- **Operating Systems:** macOS Monterey + Kali Linux
-- **Boot Mode:** Dual Boot (Option key on startup)
+## 🧠 Project Overview
+
+After updating macOS, my Kali Linux partition disappeared.  
+I decided to reinstall Kali from scratch using a USB created on my Windows PC (Rufus).  
+
+This repository documents:
+- The exact steps I followed during the reinstall.
+- How I handled the **“no network”** issue during setup.
+- The commands I used to fix the **Broadcom BCM4360** Wi-Fi driver.
+- How I got internet back using an **iPhone USB hotspot**.
+
+---
+
+## 🧰 System Information
+
+| Component | Details |
+|------------|----------|
+| **Device** | MacBook Air (Early 2015) |
+| **CPU** | Intel i5 |
+| **Wi-Fi Chip** | Broadcom BCM4360 802.11ac |
+| **Boot Setup** | Dual Boot (macOS + Kali Linux) |
+| **Installer** | Rufus (Windows) |
+| **Desktop Environment** | XFCE with All Tools |
+
+---
 
 ## ⚙️ Key Fix
-After installation, Kali didn’t detect any networks.  
-Fix applied:
+
+After installation, Kali didn’t detect any Wi-Fi networks.  
+Here’s the fix that worked for me:
+
 ```bash
 sudo apt install linux-image-amd64 linux-headers-amd64
-sudo reboot 
+sudo reboot
