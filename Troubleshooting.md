@@ -1,5 +1,5 @@
 # 🧩 Troubleshooting — Kali Linux on MacBook Air 2015
-
+ 
 This file documents the real issues I encountered while reinstalling Kali Linux on my **MacBook Air (2015, Intel i5)** after macOS updates erased my previous dual boot.  
 These are the exact fixes that worked for me.
 
