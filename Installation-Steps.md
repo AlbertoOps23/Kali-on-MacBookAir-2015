@@ -1,5 +1,5 @@
 # 🧰 Installation Steps — Kali Linux on MacBook Air 2015
-
+ 
 This document details the full installation process I followed to reinstall Kali Linux on my **MacBook Air 2015 (Intel i5)** after a macOS update removed my previous dual-boot setup.
 
 ---
